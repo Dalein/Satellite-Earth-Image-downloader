@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Satellite-earth-image-downloader by Dalein</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Satellite-earth-image-downloader</h1>
+        <p>Fetch realtime (more or less) Earth image from Himawari-8 satellite.  </p>
+
+        <p class="view"><a href="https://github.com/Dalein/Satellite-Earth-Image-downloader">View the Project on GitHub <small>Dalein/Satellite-Earth-Image-downloader</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Dalein/Satellite-Earth-Image-downloader/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Dalein/Satellite-Earth-Image-downloader/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Dalein/Satellite-Earth-Image-downloader">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="satellite-earth-image-downloader" class="anchor" href="#satellite-earth-image-downloader" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Satellite Earth Image downloader</h1>
+
+<p><img src="https://raw.githubusercontent.com/Dalein/Satellite-earth-image-downloader/master/Earth.jpg" alt="Earth">
+Fetch realtime (more or less) Earth photo from Japanese weather satellite <a href="https://en.wikipedia.org/wiki/Himawari_8">Himawari8</a>.  </p>
+
+<h1>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h1>
+
+<p>Just init SatelliteDownloader object and call downloadEarthImage. It has two delegate methods for handling events.</p>
+
+<div class="highlight highlight-source-objc"><pre>GISatelliteDownloader *satDownloader = [[GISatelliteDownloader <span class="pl-c1">alloc</span>] <span class="pl-c1">init</span>];
+satDownloader.delegate = self;
+
+#<span class="pl-k">pragma</span> satelliteDownloader  Delegate
+
+- (<span class="pl-k">void</span>)satelliteImageLoaded:(UIImage *)image withError:(<span class="pl-c1">NSError</span> *)error {
+    <span class="pl-k">if</span> (error) {
+       <span class="pl-c1">NSLog</span>(<span class="pl-s"><span class="pl-pds">@"</span>Error: <span class="pl-c1">%@</span><span class="pl-pds">"</span></span>, error);
+    }
+    <span class="pl-k">else</span> {
+       <span class="pl-c1">dispatch_async</span>(<span class="pl-c1">dispatch_get_main_queue</span>(), ^{
+       _imageView.<span class="pl-smi">image</span> = imageToSet;   
+       });
+    }
+}
+
+- (<span class="pl-k">void</span>)satelliteImageDownloadProgress:(<span class="pl-k">float</span>)progress {
+    <span class="pl-c1">dispatch_async</span>(<span class="pl-c1">dispatch_get_main_queue</span>(), ^{
+       _progressLine.<span class="pl-smi">progress</span> = progress;
+    });
+}</pre></div>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>Copy GISatelliteDownloader folder into your project.</p>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy of
+ this software and associated documentation files (the "Software"), to deal in
+ the Software without restriction, including without limitation the rights to
+ use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ of the Software, and to permit persons to whom the Software is furnished to do
+ so, subject to the following conditions:</p>
+
+<p>If you happen to meet one of the copyright holders in a bar you are obligated
+ to buy them one pint of beer.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Dalein">Dalein</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
