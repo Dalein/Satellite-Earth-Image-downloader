@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressLine;
+@property (weak, nonatomic) IBOutlet UIButton *btnStartDownload;
 
 @end
 

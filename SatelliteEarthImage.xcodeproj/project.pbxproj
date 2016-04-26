@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC00B9821CCF46BC007F6CAB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FC00B9811CCF46BC007F6CAB /* UIView+Extension.m */; };
 		FCFC1A291CCE1B99009580F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFC1A281CCE1B99009580F8 /* main.m */; };
 		FCFC1A2C1CCE1B99009580F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFC1A2B1CCE1B99009580F8 /* AppDelegate.m */; };
 		FCFC1A2F1CCE1B99009580F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFC1A2E1CCE1B99009580F8 /* ViewController.m */; };
@@ -15,6 +16,9 @@
 		FCFC1A371CCE1B9A009580F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCFC1A351CCE1B9A009580F8 /* LaunchScreen.storyboard */; };
 		FCFC1A421CCE1B9B009580F8 /* SatelliteEarthImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFC1A411CCE1B9B009580F8 /* SatelliteEarthImageTests.m */; };
 		FCFC1A4D1CCE1B9B009580F8 /* SatelliteEarthImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFC1A4C1CCE1B9B009580F8 /* SatelliteEarthImageUITests.m */; };
+		FCFC1A5E1CCE1D1C009580F8 /* NSArray+Sorting.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFC1A5B1CCE1D1C009580F8 /* NSArray+Sorting.m */; };
+		FCFC1A5F1CCE1D1C009580F8 /* UIImage+CombinedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFC1A5D1CCE1D1C009580F8 /* UIImage+CombinedImage.m */; };
+		FCFC1A631CCE1DCF009580F8 /* GISatelliteDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFC1A621CCE1DCF009580F8 /* GISatelliteDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC00B9801CCF46BC007F6CAB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		FC00B9811CCF46BC007F6CAB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		FCFC1A241CCE1B98009580F8 /* SatelliteEarthImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SatelliteEarthImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFC1A281CCE1B99009580F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCFC1A2A1CCE1B99009580F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +57,12 @@
 		FCFC1A481CCE1B9B009580F8 /* SatelliteEarthImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SatelliteEarthImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCFC1A4C1CCE1B9B009580F8 /* SatelliteEarthImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SatelliteEarthImageUITests.m; sourceTree = "<group>"; };
 		FCFC1A4E1CCE1B9B009580F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCFC1A5A1CCE1D1C009580F8 /* NSArray+Sorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sorting.h"; sourceTree = "<group>"; };
+		FCFC1A5B1CCE1D1C009580F8 /* NSArray+Sorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sorting.m"; sourceTree = "<group>"; };
+		FCFC1A5C1CCE1D1C009580F8 /* UIImage+CombinedImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CombinedImage.h"; sourceTree = "<group>"; };
+		FCFC1A5D1CCE1D1C009580F8 /* UIImage+CombinedImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CombinedImage.m"; sourceTree = "<group>"; };
+		FCFC1A611CCE1DCF009580F8 /* GISatelliteDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GISatelliteDownloader.h; sourceTree = "<group>"; };
+		FCFC1A621CCE1DCF009580F8 /* GISatelliteDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GISatelliteDownloader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC00B9831CCF5DB5007F6CAB /* GISatelliteDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				FCFC1A611CCE1DCF009580F8 /* GISatelliteDownloader.h */,
+				FCFC1A621CCE1DCF009580F8 /* GISatelliteDownloader.m */,
+			);
+			name = GISatelliteDownloader;
+			sourceTree = "<group>";
+		};
 		FCFC1A1B1CCE1B98009580F8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +124,8 @@
 			children = (
 				FCFC1A2A1CCE1B99009580F8 /* AppDelegate.h */,
 				FCFC1A2B1CCE1B99009580F8 /* AppDelegate.m */,
+				FC00B9831CCF5DB5007F6CAB /* GISatelliteDownloader */,
+				FCFC1A601CCE1D57009580F8 /* Categories */,
 				FCFC1A2D1CCE1B99009580F8 /* ViewController.h */,
 				FCFC1A2E1CCE1B99009580F8 /* ViewController.m */,
 				FCFC1A301CCE1B9A009580F8 /* Main.storyboard */,
@@ -138,6 +161,19 @@
 				FCFC1A4E1CCE1B9B009580F8 /* Info.plist */,
 			);
 			path = SatelliteEarthImageUITests;
+			sourceTree = "<group>";
+		};
+		FCFC1A601CCE1D57009580F8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FC00B9801CCF46BC007F6CAB /* UIView+Extension.h */,
+				FC00B9811CCF46BC007F6CAB /* UIView+Extension.m */,
+				FCFC1A5A1CCE1D1C009580F8 /* NSArray+Sorting.h */,
+				FCFC1A5B1CCE1D1C009580F8 /* NSArray+Sorting.m */,
+				FCFC1A5C1CCE1D1C009580F8 /* UIImage+CombinedImage.h */,
+				FCFC1A5D1CCE1D1C009580F8 /* UIImage+CombinedImage.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +307,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCFC1A2F1CCE1B99009580F8 /* ViewController.m in Sources */,
+				FCFC1A5E1CCE1D1C009580F8 /* NSArray+Sorting.m in Sources */,
+				FCFC1A631CCE1DCF009580F8 /* GISatelliteDownloader.m in Sources */,
+				FC00B9821CCF46BC007F6CAB /* UIView+Extension.m in Sources */,
 				FCFC1A2C1CCE1B99009580F8 /* AppDelegate.m in Sources */,
+				FCFC1A5F1CCE1D1C009580F8 /* UIImage+CombinedImage.m in Sources */,
 				FCFC1A291CCE1B99009580F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SatelliteEarthImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daleijn.SatelliteEarthImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SatelliteEarthImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daleijn.SatelliteEarthImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +540,7 @@
 				FCFC1A531CCE1B9B009580F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCFC1A541CCE1B9B009580F8 /* Build configuration list for PBXNativeTarget "SatelliteEarthImageTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +549,7 @@
 				FCFC1A561CCE1B9B009580F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCFC1A571CCE1B9B009580F8 /* Build configuration list for PBXNativeTarget "SatelliteEarthImageUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +558,7 @@
 				FCFC1A591CCE1B9B009580F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
